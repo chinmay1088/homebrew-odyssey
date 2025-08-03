@@ -2,7 +2,7 @@ class Odyssey < Formula
   desc "Secure command-line cryptocurrency wallet supporting Ethereum, Bitcoin, and Solana"
   homepage "https://github.com/chinmay1088/odyssey"
   url "https://github.com/chinmay1088/odyssey/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "4eda4f9f686e6abce0d98da05f611887f6d6bd408bc417ab4556f71f60cb0fdd"
+  sha256 "5aef4da78c5ae87aa2468995108356f0e2f20247ddc90f63fed6bf769228dc76"
   license "MIT"
   head "https://github.com/chinmay1088/odyssey.git", branch: "main"
 
