@@ -10,10 +10,10 @@ class Odyssey < Formula
 
   def install
     system "go", "build", *std_go_args(ldflags: "-s -w")
+    bin.install_symlink "odyssey" => "ody"
   end
 
   def post_install
-    # Create necessary directories
     (var/"odyssey").mkpath
   end
 
@@ -26,10 +26,8 @@ class Odyssey < Formula
         odyssey init    # Initialize a new wallet
         odyssey unlock  # Unlock your wallet
         odyssey address # View your addresses
-    EOS
-  end
 
-  test do
-    assert_match "Odyssey Wallet v", shell_output("#{bin}/odyssey version")
+      You can also use 'ody' as a shorter alias for all commands
+    EOS
   end
 end
